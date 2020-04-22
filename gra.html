@@ -6,11 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hangman</title>
   <link rel="stylesheet" href="gra.css"></link>
-  <script src="gra.js" type="text/javascript"></script>
+  <script src="gra.js" type="text/javascript" defer></script>
 </head>
 <body>
   <main>
+    <div id="phrase">
 
+    </div>
+    <div id="game">
+      <div id="img" style="background-image: url('img/s0.jpg')"></div>
+
+      <div id="keyboard" class="keyboard-grid">
+
+      </div>
+    </div>
+    <div id="startNew">
+      <h1>Wybierz Kategorie</h1>
+      <form id="gameType" method="GET" action="gra.html">
+        <div id="checkboxes">
+          <input type="checkbox" id="cities" name="cities">
+          <label for="cities">Miasta</label>
+          <input type="checkbox" id="sport" name="sport">
+          <label for="sport">Sport</label>
+          <input type="checkbox" id="countries" name="countries">
+          <label for="countries">Państwa</label>
+          <input type="checkbox" id="people" name="people">
+          <label for="people">Osoby</label>
+        </div>
+        <button type="submit" id="startGame">Losuj hasło</button>
+      </form>
+    </div>
   </main>
+  <audio id="badAudio">
+    <source src="no.wav" type="audio/wav">
+  </audio>
+  <audio id="goodAudio">
+    <source src="yes.wav" type="audio/wav">
+  </audio>
 </body>
 </html>

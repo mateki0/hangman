@@ -1,0 +1,115 @@
+body,html{
+  background: #000;
+  top:0;
+  margin:0;
+  padding:0;
+}
+#phrase{
+  margin-top:40px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  color:#D3D3D3;
+  font-size:42px;
+  font-weight:900;
+}
+
+.singleLetter{
+  width:40px;
+  text-align:center;
+}
+.blank{
+  padding:0 14px;
+}
+.bad{
+  background-color:red;
+}
+.good{
+  background-color: green;
+}
+#game{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.keyboard-grid{
+  display:grid;
+}
+.keyboard-flex{
+  display:flex;
+  flex-direction: column;
+}
+.win-span{
+  color:#D3D3D3;
+  font-size:28px;
+  line-height: 1.5;
+}
+.play-again{
+  display:flex;
+  align-self: center;
+  margin-top:20px;
+  border:none;
+  background:transparent;
+  color:green;
+  font-size:36px;
+  text-transform: uppercase;
+}
+.play-again:hover, .letter:hover{
+  cursor:pointer;
+}
+#keyboard{
+  width:410px;
+  height:250px;
+  margin-top:40px;
+  grid-template-columns: repeat(7, 50px [col-start]);
+  column-gap:10px;
+  row-gap:10px;
+  text-align:center;
+}
+.letter{
+  padding:5px 0;
+  font-size:22px;
+  color:#D3D3D3;
+  border:3px solid #D3D3D3;
+  border-radius:15px;
+}
+
+#img{
+  margin-right:50px;
+  width:450px;
+  height:280px;
+}
+h1{
+  text-align: center;
+  color:#D3D3D3;
+}
+#gameType{
+  display:flex;
+  flex-direction: column;
+  font-size:24px;
+  font-weight:900;
+  color:#D3D3D3;
+}
+#checkboxes{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-content: center;
+}
+
+#checkboxes>label{
+  padding:10px;
+}
+#checkboxes>input{
+
+  margin-top:17px;
+}
+#startGame{
+  display:flex;
+  align-self: center;
+  margin-top:10px;
+  padding:3px 15px;
+}
+#startNew{
+  margin-top:50px;
+}
