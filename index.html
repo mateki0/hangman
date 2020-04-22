@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="index.css"></link>
+  <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+  <main>
+    <h1>Wybierz Kategorie</h1>
+    <form id="gameType" method="GET" action="gra.html">
+      <div id="checkboxes">
+        <input type="checkbox" id="cities" name="cities">
+        <label for="cities">Miasta</label>
+        <input type="checkbox" id="sport" name="sport">
+        <label for="sport">Sport</label>
+        <input type="checkbox" id="countries" name="countries">
+        <label for="countries">Państwa</label>
+        <input type="checkbox" id="people" name="people">
+        <label for="people">Osoby</label>
+      </div>
+      <button type="submit" id="startGame">Losuj hasło</button>
+    </form>
+  </main>
+</body>
+</html>
